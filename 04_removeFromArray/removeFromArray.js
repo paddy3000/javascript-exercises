@@ -1,5 +1,5 @@
-const removeFromArray = function(arrayIn, subset) {
-  return arrayIn.filter((string) => {!(subset.includes(string))})
+const removeFromArray = function(arrayIn, ...args) {
+  return arrayIn.filter(string => !args.includes(string));
 };
 
 // Do not edit below this line
